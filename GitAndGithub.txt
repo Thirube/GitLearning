@@ -36,4 +36,4 @@
 4. 从Github上同步至本地
 	git pull origin master
 
-
+5. 有时会报错，需要做什么正在试验
