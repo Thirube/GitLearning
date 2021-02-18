@@ -26,12 +26,14 @@
 2. 将远程仓库和本地仓库关联起来
 	先到Github上复制远程仓库的SSH地址：
 	git remote add origin 你复制的地址
-		如果你在创建 repository 的时候，加入了 README.md 或者 LICENSE ，那么 github 会拒绝你的 push 。你需要先执行 git pull origin master。
 	执行 git push -u origin master 将本地仓库上传至Github的仓库并进行关联
+		推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来
+		在以后的推送或者拉取时就可以简化命令
 	
 3. 同步到Github上，只要直接执行 
-	git push
+	git push origin master
 
-
+4. 从Github上同步至本地
+	git pull origin master
 
 
