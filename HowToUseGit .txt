@@ -1,1 +1,35 @@
 How To Use Git?
+
+网址：https://www.bilibili.com/video/BV1bs411N7ny?p=1
+对应CSDN ：https://blog.csdn.net/weixin_43239068/article/details/107533322
+
+
+常用命令：
+
+1. 初始化空的仓库
+git init
+
+2. 将文件放入暂存区
+git add FileName
+
+3. 将暂存区文件提交到git仓库
+git commit -m "add a xxx file"  //""中间的信息是提交此次缓存的备注(必填),方便应用
+
+4. 查看状态
+git status
+
+5. 查看历史提交记录
+git log
+
+6. diff对比
+git diff
+
+7. 修改最后一次提交的备注
+git commit --amend //输入后会进入到新的页面,vi命令操作
+
+8. 重命名文件
+git mv fileName newFileName
+
+9. 按要求显示历史提交记录
+git log --decorate --oneline --graph --all 
+//‘oneline’精简化的显示 ‘graph’图形化显示 ‘all’显示所有的分支，decorate后的顺序可随意
